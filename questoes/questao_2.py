@@ -3,15 +3,12 @@
 # para °F (graus fahrenheit). 
 ##
 
-
-##
-# A sua resposta da questão deve ser desenvolvida dentro da função main()!!! 
-# Deve-se substituir o comado print existente pelo código da solução.
-# Para a correta execução do programa, a estrutura atual deve ser mantida,
-# substituindo apenas o comando print(questão...) existente.
-##
 def main():
-    print("questao 2")
+    celsius = int(input('Please input temperature in Celsius: '))
+
+    fahrenheit = ((9*celsius)/5) + 32
+
+    print('{}°C is {}°F'.format(celsius, fahrenheit))
 
 
 
