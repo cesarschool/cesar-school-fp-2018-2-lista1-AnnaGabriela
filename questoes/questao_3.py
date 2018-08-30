@@ -7,7 +7,7 @@
 def main():
     PI = 3.14
     
-    radius = int(input('Please input the circle radius: '))
+    radius = float(input('Please input the circle radius: '))
 
     circleArea = PI * radius**2
     diameter = radius*2
