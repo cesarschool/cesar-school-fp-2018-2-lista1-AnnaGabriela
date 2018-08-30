@@ -4,16 +4,20 @@
 # agradável de volta para o usuário com a resposta. 
 ##
 
-##
-# A sua resposta da questão deve ser desenvolvida dentro da função main()!!! 
-# Deve-se substituir o comado print existente pelo código da solução.
-# Para a correta execução do programa, a estrutura atual deve ser mantida,
-# substituindo apenas o comando print(questão...) existente.
-##
 def main():
-    print("questao 3")
+    PI = 3.14
+    
+    radius = int(input('Please input the circle radius: '))
 
+    circleArea = PI * radius**2
+    diameter = radius*2
+    circunferenceLenght = 2*PI*radius
 
+    print('With a radius of {}:'.format(radius))
+    print('The circle area is {}'.format(circleArea))
+    print('The diameter is {}'.format(diameter))
+    print('The circunference lenght is {}'.format(circunferenceLenght))
+    
     
 if __name__ == '__main__':
     main()
