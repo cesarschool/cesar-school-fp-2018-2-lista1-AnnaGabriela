@@ -4,14 +4,13 @@
 # novo salário. 
 ##
 
-##
-# A sua resposta da questão deve ser desenvolvida dentro da função main()!!! 
-# Deve-se substituir o comado print existente pelo código da solução.
-# Para a correta execução do programa, a estrutura atual deve ser mantida,
-# substituindo apenas o comando print(questão...) existente.
-##
 def main():
-    print("questao 1")
+    salary = int(input("Type your salary: "))
+    payrise = int(input("Type the pay rise percentage: "))
+
+    newSalary = salary + (salary*(payrise/100))
+
+    print("Your pay rise was {}% and your new salary is ${}".format(payrise, newSalary))
     
 
 
