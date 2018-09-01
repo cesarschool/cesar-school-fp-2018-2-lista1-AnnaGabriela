@@ -5,15 +5,19 @@
 # quantos dias de vida um fumante perderá. Exiba o total em dias. 
 ##
 
-
-##
-# A sua resposta da questão deve ser desenvolvida dentro da função main()!!! 
-# Deve-se substituir o comado print existente pelo código da solução.
-# Para a correta execução do programa, a estrutura atual deve ser mantida,
-# substituindo apenas o comando print(questão...) existente.
-##
 def main():
-    print("questao 5")
+    dayInMinutes = 1440
+    minutesLostPerCigarette = 10
+
+    cigarettesPerDay = int(input("How many cigarettes do you smoke per day? "))
+    yearsOfSmoking = int(input("For how many years have you been smoking? "))
+
+    daysOfSmoking = yearsOfSmoking * 365
+    totalCigarettesSmoked = cigarettesPerDay * daysOfSmoking
+    daysLost = (totalCigarettesSmoked * minutesLostPerCigarette) // dayInMinutes
+
+    print("By smoking {} cigarettes per day for {} years, you have lost approximately {} day(s) of your life."
+        .format(cigarettesPerDay, yearsOfSmoking, daysLost))
 
 
     
