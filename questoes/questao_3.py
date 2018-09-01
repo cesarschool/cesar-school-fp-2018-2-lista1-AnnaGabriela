@@ -9,7 +9,7 @@ def main():
     
     radius = float(input('Please input the circle radius: '))
 
-    circleArea = PI * radius**2
+    circleArea = PI * (radius**2)
     diameter = radius*2
     circunferenceLenght = 2*PI*radius
 
