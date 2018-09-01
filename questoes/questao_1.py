@@ -5,8 +5,8 @@
 ##
 
 def main():
-    salary = int(input("Type your salary: "))
-    payrise = int(input("Type the pay rise percentage: "))
+    salary = float(input("Type your salary: "))
+    payrise = float(input("Type the pay rise percentage: "))
 
     newSalary = salary + (salary*(payrise/100))
 
