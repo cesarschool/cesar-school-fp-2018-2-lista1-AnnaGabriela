@@ -5,13 +5,13 @@
 # R$ 0,15 por km rodado.
 
 def main():
-    carCostPerDay = 60
+    costPerDay = 60
     costPerKm = 0.15
 
     kmTravelled = float(input("How many km have been travelled? "))
     daysOfRent = int(input("How many days have been used? "))
 
-    price = (daysOfRent * carCostPerDay) + (kmTravelled * costPerKm)
+    price = (daysOfRent * costPerDay) + (kmTravelled * costPerKm)
 
     print("For travelling {} km for {} days, you have spent ${}".format(kmTravelled, daysOfRent, price))
 
