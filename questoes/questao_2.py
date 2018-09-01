@@ -4,7 +4,7 @@
 ##
 
 def main():
-    celsius = int(input('Please input temperature in Celsius: '))
+    celsius = float(input('Please input temperature in Celsius: '))
 
     fahrenheit = ((9*celsius)/5) + 32
 
