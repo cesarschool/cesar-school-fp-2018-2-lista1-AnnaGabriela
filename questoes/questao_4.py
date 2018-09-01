@@ -4,14 +4,16 @@
 # alugado. Calcule o preço a pagar, sabendo que o carro custa R$ 60 por dia e 
 # R$ 0,15 por km rodado.
 
-##
-# A sua resposta da questão deve ser desenvolvida dentro da função main()!!! 
-# Deve-se substituir o comado print existente pelo código da solução.
-# Para a correta execução do programa, a estrutura atual deve ser mantida,
-# substituindo apenas o comando print(questão...) existente.
-##
 def main():
-    print("questao 4")
+    carCostPerDay = 60
+    costPerKm = 0.15
+
+    kmTravelled = float(input("How many km have been travelled? "))
+    daysOfRent = int(input("How many days have been used? "))
+
+    price = (daysOfRent * carCostPerDay) + (kmTravelled * costPerKm)
+
+    print("For travelling {} km for {} days, you have spent ${}".format(kmTravelled, daysOfRent, price))
 
 
     
