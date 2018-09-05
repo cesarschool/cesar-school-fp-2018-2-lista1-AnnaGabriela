@@ -8,11 +8,12 @@
 def main():
     dayInMinutes = 1440
     minutesLostPerCigarette = 10
+    daysPerYear = 365
 
     cigarettesPerDay = int(input("How many cigarettes do you smoke per day? "))
     yearsOfSmoking = int(input("For how many years have you been smoking? "))
 
-    daysOfSmoking = yearsOfSmoking * 365
+    daysOfSmoking = yearsOfSmoking * daysPerYear
     totalCigarettesSmoked = cigarettesPerDay * daysOfSmoking
     daysLost = (totalCigarettesSmoked * minutesLostPerCigarette) // dayInMinutes
 
